@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
 REST_FRAMEWORK = {
     "DEFAULT_PERMISSION_CLASSES": [
-        "rest_framework.permissions.AllowAny",
+        "rest_framework.permissions.IsAuthenticated",
     ],
 }
 
@@ -99,7 +99,7 @@ DATABASES = {
         "NAME": "BlogApi",
         "USER": "postgres",
         "HOST": "localhost",
-        "PASSWORD": "Asila@1991",
+        "PASSWORD": "",
         "PORT": "5433",
     }
 }
